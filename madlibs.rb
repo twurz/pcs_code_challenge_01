@@ -1,4 +1,4 @@
-
+def madlibs
 
 	words = Hash.new
 
@@ -20,7 +20,19 @@
 	puts words.keys.inspect
 	puts words.values.inspect
 
+end
 
+madlibs
+
+def sentence1(words)
+
+	template = "The #{words[:adjective]} (noun) suddenly and (adverb) had to (verb) the (object)."
+
+	puts template
+
+end
+
+sentence1(words)
 
 
 
