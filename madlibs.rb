@@ -20,19 +20,21 @@ def madlibs
 	puts words.keys.inspect
 	puts words.values.inspect
 
+	return words
+
 end
 
-madlibs
+output = madlibs
 
-def sentence1(words)
+def sentence1(output)
 
-	template = "The #{words[:adjective]} (noun) suddenly and (adverb) had to (verb) the (object)."
+	template = "The #{output[:adjective]} #{output[:noun]} suddenly and #{output[:adverb]} had to #{output[:verb]} the #{output[:object]}."
 
 	puts template
 
 end
 
-sentence1(words)
+sentence1(output)
 
 
 
