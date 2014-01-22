@@ -1,3 +1,4 @@
-This is the first paired project for 2014 Q1 ruby class
-=====================
-These are my changes for experimental push! Yay!
+Increment 1:
+The program prompts a user for a noun and enters it into the phrase: "The (noun) went to sea in a sturdy ship."
+
+It then displays the result with the noun entered.
