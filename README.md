@@ -1,4 +1,6 @@
-Increment 1:
-The program prompts a user for a noun and enters it into the phrase: "The (noun) went to sea in a sturdy ship."
+Increment 3:
+The program prompts a user for several types of words.  It saves them in a hash.  
 
-It then displays the result with the noun entered.
+Then the program iterates through an array of templates and displays the resulting sentences constructed from the words in the hash.  
+
+We have also required the pry debugger gem.  

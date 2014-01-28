@@ -1,4 +1,6 @@
-def madlibs
+require 'pry'
+
+def prompt
 
 	words = Hash.new
 
@@ -17,26 +19,29 @@ def madlibs
 	puts "Please enter an Object."
 	words[:object] = gets.chomp
 
-	puts words.keys.inspect
-	puts words.values.inspect
-
 	return words
-
 end
 
-output = madlibs
 
-def sentence1(output)
 
-	template = "The #{output[:adjective]} #{output[:noun]} suddenly and #{output[:adverb]} had to #{output[:verb]} the #{output[:object]}."
 
-	puts template
+output = prompt
 
+binding.pry #execution will drop into pry at this line
+
+class Sentence_template
 end
 
-sentence1(output)
+templates = Array.new
 
+	templates[0] = "The #{output[:adjective]} #{output[:noun]} suddenly and #{output[:adverb]} had to #{output[:verb]} the #{output[:object]}."
+	#binding.pry
+	templates[1] = "Your #{output[:noun]} is very #{output[:adjective]}."
+	#binding.pry
+	templates[2] = "While in the #{output[:noun]}, I saw #{output[:object]} #{output[:verb]}."
+	#binding.pry
 
+puts templates
 
 
 
